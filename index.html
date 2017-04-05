@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="mtdMobile.css" rel="stylesheet" type="text/css">
+    <link href="mtd.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- changes the icon in title bar -->
+    <link rel="shortcut icon" href="beaker.ico">
+
+    <title>#</title>
+  </head>
+
+  <body>
+      <div class="row">
+        <header class="header, col-12-m">
+			   <div id="menu-toggle"></div>
+          <nav class=navigation>
+
+            <!-- hamburger menu start -->
+            <ul>
+              <div class="container" onclick="burgerToggle(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </ul>
+            <!-- menu that opens -->
+            <div class="responsive-menu">
+                <ul>
+                    <li>1. Object</li>
+                    <li>2. Object</li>
+                </ul>
+              </div>
+          </nav>
+          <h1>Title</h1>
+      </div>
+    </header>
+  </div>
+
+      <!-- card 1 -->
+      <div class="card, card-2"><h1>Home</h1></div>
+      <!-- card 2 -->
+      <div class="card, card-2"><h1>Renderer</h1></div>
+      <!-- card 3 -->
+      <div class="card, card-2"><h1>Molecules</h1></div>
+      <!-- card 4 -->
+      <div class="card, card-2"><h1>Contact Us</h1></div>
+
+
+
+<script>
+/* hamburger menu click animation */
+  function burgerToggle(x) {
+    x.classList.toggle("change");
+  };
+</script>
+
+</body>
+</html>
